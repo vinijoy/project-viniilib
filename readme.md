@@ -23,9 +23,9 @@ vini지식보관소는 다음과 같은 효과를 기대합니다:
 
 ## 개발 환경 및 언어
 vini지식보관소는 php 언어와 mysql로 개발되었습니다.
-개발 환경: macOS Monterey
-언어: php8.0, mysql8.0
-백앤드 페키지: apache
+- 개발 환경: macOS Monterey
+- 언어: php8.0, mysql8.0
+- 백앤드 페키지: apache
 
 ## 준비 및 실행 방법
 - 먼저 다음 경로에 프로젝트를 내려받습니다.
