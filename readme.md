@@ -21,6 +21,31 @@ vini지식보관소는 다음과 같은 효과를 기대합니다:
 - 지식 공유와 상호작용이 활발하게 이루어집니다.
 - 커뮤니티 멤버들의 지식과 경험의 폭이 넓어집니다.
 
+## 개발 환경 및 언어
+vini지식보관소는 php 언어와 mysql로 개발되었습니다.
+개발 환경: macOS Monterey
+언어: php8.0, mysql8.0
+백앤드 페키지: apache
+
+## 준비 및 실행 방법
+- 먼저 다음 경로에 프로젝트를 내려받습니다.
+/var/www/html/
+- mysql 서버에 접속하기 위한 정보를 환경변수로 설정하기 위해 cli 환경에서 ssh로 서버에 접속합니다.
+- 관리자 권한으로 vi 편집기나 nano 편집기를 이용해 아파치 설정파일을 편집합니다.
+아파치 설정파일은 보통 /etc/httpd/conf/httpd.conf 경로에 위치합니다.
+sudo nano /etc/httpd/conf/httpd.conf
+또는
+sudo vi /etc/httpd/conf/httpd.conf
+- 해당 파일에 다음과 같은 형식으로 환경변수를 추가합니다.
+SetEnv ENV_NAME ENV_VALUE
+ENV_NAME에는 환경변수의 이름을, ENV_VALUE에는 해당 환경변수의 값을 넣습니다.
+위와 같은 형식으로 여러 개 추가할 수 있습니다.
+SetEnv DB_HOST localhost
+- 다 작성했다면 저장하고 빠져나옵니다.
+- 변경사항을 적용하기 위해 아파치 서버를 재시작합니다.
+sudo service httpd restart
+- 이제부터 해당 서버에 할당된 도메인으로 접속하면 vini지식보관소의 기능을 이용할 수 있습니다.
+
 ## 참여 방법
 vini지식보관소 프로젝트에 참여하고 싶다면 아래의 담당자에게 연락하여 참여 방법을 문의해주세요:
 - 담당자: vini
