@@ -52,7 +52,9 @@ resultDiv.innerHTML = '잠시만 기다려주세요.'
             let board = document.getElementById('script')
 let newText = choice.message.content.replace(/"은 /g, '"은\n')
 newText = newText.replace(/"는 /g, '"는\n')
-newText = newText.replace(/어로 /g, '어로\n')
+newText = newText.replace(/"을 /g, '"을\n')
+newText = newText.replace(/"를 /g, '"를\n')
+newText = newText.replace(/번역하면 /g, '번역하면\n')
 newText = newText.replace(/"입니다./g, '"\n입니다.')
               resultDiv.innerHTML = `<h2>번역 결과</h2>${newText
                 .split('\n')
