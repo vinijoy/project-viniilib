@@ -39,7 +39,7 @@ resultDiv.innerHTML = '잠시만 기다려주세요.'
           },
         }
         let data = {
-          model: 'gpt-3.5-turbo',
+          model: 'gpt-4',
           temperature: 0.5,
 top_p: 0.6,
 presence_penalty: 0.5,
